@@ -1,0 +1,99 @@
+@import "colors.less";
+
+.compnonent-gradient{
+  background: linear-gradient(to top, #83a230, #c3dc6b);
+  background: -moz-linear-gradient(to top, #83a230, #c3dc6b);
+  background: -webkit-linear-gradient(to top, #83a230, #c3dc6b);
+  background: -o-linear-gradient(to top, #83a230, #c3dc6b);
+  background: linear-gradient(to top, #83a230, #c3dc6b);
+}
+
+//кнпки меню
+.component-button-menu{
+  display: inline-block;
+  padding:17px 15px;
+  color:white;
+}
+
+//цвет активного меню
+.component-active-button-menu{
+  background-color: @colorActiveMenu;
+}
+
+// Название блоков в правой части сайта
+.title-block{
+  width:188px;
+  height:41px;
+  margin:0 auto;
+  background-color: #c3dc6b;
+  border-radius: 10px;
+  font-size:13px;
+  font-family: Calibri;
+  text-transform: uppercase;
+  .compnonent-gradient;
+}
+
+//Мини блоки в правой части страницы
+.mini-blocks{
+  width:180px;
+  border-radius: 10px;
+  margin:10px auto 0 auto;
+  font-size:11px;
+  padding:1px 0 3px 0;
+  color:#676767;
+
+  //Форматирование парагрофов в мини блоках
+  >p{
+    margin:2px 8px;
+
+   >a{
+      text-decoration: none;
+    }
+
+  }
+
+  >p:nth-of-type(1){
+    margin:2px 8px 10px 8px;
+  }
+}
+
+//Пагинация страниц
+.pagination-style{
+  display: inline-block;
+  border:0;
+  margin-left:2px;
+  padding:0 7px;
+  padding-bottom:2px;
+  font-size:15px;
+  list-style:none;
+}
+
+//Кнопки пагинации Вперед Назад
+.pagination-last-button{
+   padding-left:10px;
+   float:right;
+    >a{
+      text-decoration: none;
+      color:#707070;
+    }
+    >a.active {
+    color:#80934e;
+    }
+}
+
+//Cсылки в футере для 3-го писка
+.footer-link {
+  display:inline-block;
+  background-color:#95b244;
+  border-radius:5px;
+  padding:4px 8px;
+  margin:3px 3px 3px 0;
+
+  >a{
+    color:white;
+    font-size:13px;
+  }
+}
+
+
+
